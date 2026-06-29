@@ -1,0 +1,23 @@
+{
+  "name": "novarag",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bunx --bun trigger.dev@latest dev"
+  },
+  "devDependencies": {
+    "@trigger.dev/build": "4.4.6",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@trigger.dev/python": "^4.4.6",
+    "@trigger.dev/sdk": "4.4.6",
+    "ppu-paddle-ocr": "^6.0.0",
+    "zod": "^4.4.3"
+  }
+}

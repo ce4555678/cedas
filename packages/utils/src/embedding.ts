@@ -1,5 +1,6 @@
-import { pipeline, FeatureExtractionPipeline } from "@huggingface/transformers";
+import { pipeline, FeatureExtractionPipeline, env } from "@huggingface/transformers";
 
+env.cacheDir = "./models"
 // Classe Singleton para garantir que o modelo seja carregado apenas uma vez
 class EmbeddingPipeline {
   private static instance: FeatureExtractionPipeline | null = null;

@@ -1,4 +1,4 @@
-import { fromBuffer, fromPath } from "pdf2pic"
+import { fromBuffer } from "pdf2pic"
 import { imageOcr } from "./image-ocr"
 import fs from "fs"
 import { cleanText } from "./clean-text"
@@ -11,10 +11,10 @@ const options = {
 
 async function convertPdfPage(pdfUrl: string, pageNumber: number = 1) {
   // Fetch the PDF and convert ArrayBuffer → Buffer
-  // const arrayBuffer = await fetch(pdfUrl).then((res) => res.arrayBuffer());
-  // const buffer = Buffer.from(arrayBuffer);
+  const arrayBuffer = await fetch(pdfUrl).then((res) => res.arrayBuffer())
+  const buffer = Buffer.from(arrayBuffer)
 
-  const convert = fromPath("./ESTATUTO SOCIAL - COOPERSEL.pdf", options)
+  const convert = fromBuffer(buffer, options)
 
   const result = await convert(pageNumber, { responseType: "buffer" })
 
