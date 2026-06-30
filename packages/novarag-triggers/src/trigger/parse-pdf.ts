@@ -1,6 +1,6 @@
 import { logger, schemaTask } from "@trigger.dev/sdk/v3"
 import * as z from "zod"
-import { parsePdf } from "@workspace/utils/parse-pdf"
+import { parsePdf } from "utils/pdf-parse"
 import { fetchPdfTask } from "./fetch-pdf"
 import { cleanTextTask } from "./clean-text"
 

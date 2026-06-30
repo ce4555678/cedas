@@ -1,6 +1,5 @@
 import { logger, schemaTask } from "@trigger.dev/sdk/v3"
 import * as z from "zod"
-import { cleanText } from "@workspace/utils/clean-text"
 import { PaddleOcrService, V6_MEDIUM_MODEL } from "ppu-paddle-ocr"
 import { fetchimageTask } from "./fetch-image"
 

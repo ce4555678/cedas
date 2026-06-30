@@ -12,7 +12,7 @@ const extractorPromise = pipeline(
   "feature-extraction",
   "Xenova/paraphrase-multilingual-MiniLM-L12-v2",
   { 
-    quantized: true
+    dtype: "q4"
   }
 )
 

@@ -1,6 +1,6 @@
 import { logger, schemaTask } from "@trigger.dev/sdk/v3"
 import * as z from "zod"
-import { cleanText } from "@workspace/utils/clean-text"
+import { cleanText } from "utils"
 export const cleanTextTask = schemaTask({
   id: "clean-text",
   machine: "micro",

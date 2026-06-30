@@ -1,6 +1,6 @@
 import { logger, schemaTask } from "@trigger.dev/sdk/v3"
 import * as z from "zod"
-import { fetchPdf } from "@workspace/utils/fetch-pdf"
+import { fetchPdf } from "utils/pdf-fetch"
 
 export const fetchPdfTask = schemaTask({
   id: "fetch-pdf",

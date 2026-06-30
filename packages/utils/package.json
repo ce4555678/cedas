@@ -18,5 +18,10 @@
     "ppu-paddle-ocr": "^6.0.0",
     "tesseract.js": "^7.0.0",
     "unpdf": "^1.6.2"
+  },
+  "exports": {
+    ".": "./src/clean-text.ts",
+    "./pdf-parse": "./src/parse-pdf.ts",
+    "./pdf-fetch": "./src/fetch-pdf.ts"
   }
 }
